@@ -1,0 +1,153 @@
+html{
+    background-image:url(../images/background.png);
+    
+    text-align: center;
+    background-position: center;
+}
+
+#brasao{
+    z-index: 1000;
+    position:fixed;
+    margin-top: -10px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 100px;
+
+}
+
+
+
+h1{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+#container{
+    width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 300px 20px 20px 80px; /*segue relogio*/
+    border: 5px solid black;
+    text-align: left;
+    position: relative;
+    background-image: url("../images/paleta.png");
+    background-repeat: repeat-y;
+    
+}
+
+
+h3{
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+   
+}
+
+.txtMembro{
+    width: 220px;
+}
+
+.membros {
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+}
+
+
+.encontros{
+    display: block;
+    align-items: center;
+    justify-content: space-around;
+
+}
+    
+
+.foto{
+    display: block;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.descricao{
+    text-align: center;
+}
+
+
+.brasaopq{
+    display: none;
+}
+
+
+
+@media screen and  (max-width: 700px){
+
+   
+    #brasao{
+        display: none;
+    }
+
+    .brasaopq{
+        display: block;
+        z-index: 1000;
+        position:fixed;
+        margin-top: -10px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #container{
+        width: 250px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        padding: 300px 20px 20px 30px; /*segue relogio*/
+        border: 5px solid black;
+        text-align: left;
+        position: relative;
+        background-image: url("../images/paletafina.png");
+        background-repeat: repeat-y;
+        font-size: 30px;
+        
+        
+    }
+
+    .membros{
+        flex-direction: column;
+        border-bottom: 1px solid #666666;
+        margin: 0px 0px 30px 0px;
+    }
+
+
+    .encontros{
+        flex-direction: column;
+        border-bottom: 1px solid #666666;
+        margin: 0px 0px 30px 10px;
+    }
+
+    .encontros img{
+        width: 200px;
+    }
+
+    video{
+        width: 250px;
+    }
+
+    h3{
+        font-size: 30px;
+    }
+
+
+
+
+
+
+
+
+}
