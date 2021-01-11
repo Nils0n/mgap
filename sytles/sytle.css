@@ -88,9 +88,16 @@ h3{
 
 @media screen and  (max-width: 700px){
 
+    body{
+        background-image: url("../images/faixapq.png");
+        margin-left:5px;
+        margin-right: 9px;
+        background-repeat:  repeat-y;
+    }
    
     #brasao{
         display: none;
+        
     }
 
     .brasaopq{
@@ -101,6 +108,7 @@ h3{
         width: 100%;
         text-align: center;
         margin-bottom: 20px;
+        margin-left: 0px;
     }
 
     #container{
@@ -108,11 +116,12 @@ h3{
         margin: 0 auto;
         background-color: #ffffff;
         padding: 300px 20px 20px 30px; /*segue relogio*/
-        border: 5px solid black;
+        border: 1px solid black;
         text-align: left;
         position: relative;
         background-image: url("../images/paletafina.png");
         background-repeat: repeat-y;
+        margin-right: auto;
         font-size: 30px;
         
         
