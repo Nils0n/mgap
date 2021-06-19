@@ -1,163 +1,154 @@
-html{
-    background-image:url(../images/background.png);
-    
-    text-align: center;
-    background-position: center;
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+html {
+  background-image: url(../images/background.png);
+  text-align: center;
+  background-position: center;
+  font-family: "Roboto", sans-serif;
 }
 
-#brasao{
-    z-index: 1000;
-    position:fixed;
-    margin-top: -10px;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 100px;
-
+#brasao {
+  z-index: 1000;
+  position: fixed;
+  margin-top: -10px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 100px;
 }
 
+h1 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
 
-
-h1{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 48px;
-    line-height: 56px;
-    text-align: center;
-
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
-#container{
-    width: 600px;
-    margin: 0 auto;
-    background-color: #ffffff;
-    padding: 300px 20px 20px 80px; /*segue relogio*/
-    border: 5px solid black;
-    text-align: left;
-    position: relative;
-    background-image: url("../images/paleta.png");
-    background-repeat: repeat-y;
-    
+#container {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 300px 20px 20px 80px; /*segue relogio*/
+  border: 5px solid black;
+  text-align: left;
+  position: relative;
+  background-image: url("../images/paleta.png");
+  background-repeat: repeat-y;
 }
 
-
-h3{
-    font-family: Roboto;
-    font-style: normal;
-    font-size: 18px;
-    line-height: 21px;
-   
+h3 {
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
 }
 
-.txtMembro{
-    width: 220px;
+.txtMembro {
+  width: 220px;
+  padding-left: 2.5vh;
 }
 
 .membros {
-    display: flex;
-    margin: auto;
-    justify-content: space-around;
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
 }
 
-
-.encontros{
-    display: block;
-    align-items: center;
-    justify-content: space-around;
-
-}
-    
-
-.foto{
-    display: block;
-    text-align: center;
-    padding: 20px 0px;
+.encontros {
+  display: block;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.descricao{
-    text-align: center;
+.foto {
+  display: block;
+  text-align: center;
+  padding: 20px 0px;
 }
 
+.descricao {
+  text-align: center;
+}
 
-.brasaopq{
+.brasaopq {
+  display: none;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2vh;
+  font-weight: bold;
+}
+
+.membros .item {
+  width: 120px;
+  margin-right: 1vw;
+}
+
+.moto{
+    width: 10vw;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    background-image: url("../images/faixapq.png");
+    margin-left: 5px;
+    margin-right: 9px;
+    background-repeat: repeat-y;
+  }
+
+  #brasao {
     display: none;
-}
+  }
 
+  .brasaopq {
+    display: block;
+    z-index: 1000;
+    position: fixed;
+    margin-top: -10px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 0px;
+  }
 
+  #container {
+    width: 250px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 300px 20px 20px 30px; /*segue relogio*/
+    border: 1px solid black;
+    text-align: left;
+    position: relative;
+    background-image: url("../images/paletafina.png");
+    background-repeat: repeat-y;
+    margin-right: auto;
+    font-size: 30px;
+  }
 
-@media screen and  (max-width: 700px){
+  .membros {
+    flex-direction: column;
+    border-bottom: 1px solid #666666;
+    margin: 0px 0px 30px 0px;
+  }
 
-    body{
-        background-image: url("../images/faixapq.png");
-        margin-left:5px;
-        margin-right: 9px;
-        background-repeat:  repeat-y;
-    }
-   
-    #brasao{
-        display: none;
-        
-    }
+  .encontros {
+    flex-direction: column;
+    border-bottom: 1px solid #666666;
+    margin: 0px 0px 30px 10px;
+  }
 
-    .brasaopq{
-        display: block;
-        z-index: 1000;
-        position:fixed;
-        margin-top: -10px;
-        width: 100%;
-        text-align: center;
-        margin-bottom: 20px;
-        margin-left: 0px;
-    }
+  .encontros img {
+    width: 200px;
+  }
 
-    #container{
-        width: 250px;
-        margin: 0 auto;
-        background-color: #ffffff;
-        padding: 300px 20px 20px 30px; /*segue relogio*/
-        border: 1px solid black;
-        text-align: left;
-        position: relative;
-        background-image: url("../images/paletafina.png");
-        background-repeat: repeat-y;
-        margin-right: auto;
-        font-size: 30px;
-        
-        
-    }
+  video {
+    width: 250px;
+  }
 
-    .membros{
-        flex-direction: column;
-        border-bottom: 1px solid #666666;
-        margin: 0px 0px 30px 0px;
-    }
-
-
-    .encontros{
-        flex-direction: column;
-        border-bottom: 1px solid #666666;
-        margin: 0px 0px 30px 10px;
-    }
-
-    .encontros img{
-        width: 200px;
-    }
-
-    video{
-        width: 250px;
-    }
-
-    h3{
-        font-size: 30px;
-        line-height: 1 ;
-    }
-
-
-
-
-
-
-
-
+  h3 {
+    font-size: 30px;
+    line-height: 1;
+  }
 }
