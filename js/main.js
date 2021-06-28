@@ -7,6 +7,6 @@ const scrollReveal = ScrollReveal({
 
 scrollReveal.reveal(`
   #about h2, #about p ,
-  .membros .item, .membros .txtMembros , .membros .moto,
+  .membros .item, .membros .h3, .membros p , .membros .moto,
   .encontros .descricao , .membors .foto
 `)
